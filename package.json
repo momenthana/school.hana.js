@@ -16,5 +16,8 @@
   },
   "keywords": [],
   "license": "MIT",
-  "description": ""
+  "description": "",
+  "devDependencies": {
+    "typescript": "^4.0.2"
+  }
 }
