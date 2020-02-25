@@ -1,7 +1,10 @@
 {
   "name": "school-info",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/momenthana/hana.git"
@@ -11,9 +14,6 @@
     "url": "https://github.com/momenthana/hana/issues"
   },
   "homepage": "https://github.com/momenthana/hana#readme",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "keywords": [],
   "license": "MIT",
   "description": "",
