@@ -1,1 +1,3 @@
-console.log('init')
+import search from './func/search'
+
+export { search }
