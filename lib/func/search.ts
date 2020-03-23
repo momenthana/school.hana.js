@@ -1,14 +1,13 @@
 import axios from 'axios'
 
-const search = (text: string) => {
+const search = (object: object) => {
   return axios.get('https://open.neis.go.kr/hub/schoolInfo', {
-    params: {
+    params: Object.assign({
       Type: 'json',
-      SCHUL_NM: text
-    }
+    }, object)
   })
-    .then(res => {
-      return res.data.schoolInfo[1].row[0]
+    .then(req => {
+      return req.data.schoolInfo[1].row[0]
     })
     .catch(err => {
       return err
