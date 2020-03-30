@@ -1,3 +1,4 @@
+import meal from './func/meal'
 import search from './func/search'
 
-export { search }
+export { meal, search }

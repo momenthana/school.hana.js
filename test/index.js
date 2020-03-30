@@ -5,4 +5,8 @@ school.search({
 })
   .then(res => {
     console.log(res)
+    school.meal(res)
+      .then(res => {
+        console.log(res)
+      })
   })
