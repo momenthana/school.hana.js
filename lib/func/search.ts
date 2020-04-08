@@ -7,7 +7,7 @@ const search = (object: object) => {
     }, object)
   })
     .then(req => {
-      return req.data.schoolInfo[1].row[0]
+      return req.data.schoolInfo[1].row
     })
     .catch(err => {
       return err
