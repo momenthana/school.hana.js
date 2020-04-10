@@ -13,4 +13,8 @@ school.search({
       .then(res => {
         console.log(res[0])
       })
+    school.major(res[0])
+      .then(res => {
+        console.log(res[0])
+      })
   })
