@@ -21,4 +21,8 @@ school.search({
       .then(res => {
         console.log('CLASSROOM:', res[0])
       })
+    await school.hTimetable(res[0])
+      .then(res => {
+        console.log('H_TIMETABLE:', res[0])
+      })
   })
