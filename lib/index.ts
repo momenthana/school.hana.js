@@ -1,1 +1,1 @@
-export { classroom, hTimetable, major, meal, schedule, search } from './func'
+export { classroom, hTimetable, major, meal, mTimetable, schedule, search } from './func'
