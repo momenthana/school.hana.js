@@ -1,4 +1,5 @@
 import classroom from './classroom'
+import eTimetable from './eTimetable'
 import hTimetable from './hTimetable'
 import major from './major'
 import meal from './meal'
@@ -8,6 +9,7 @@ import search from './search'
 
 export {
   classroom,
+  eTimetable,
   hTimetable,
   major,
   meal,
