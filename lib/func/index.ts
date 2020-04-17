@@ -6,6 +6,7 @@ import meal from './meal'
 import mTimetable from './mTimetable'
 import schedule from './schedule'
 import search from './search'
+import sTimetable from './sTimetable'
 
 export {
   classroom,
@@ -15,5 +16,6 @@ export {
   meal,
   mTimetable,
   schedule,
-  search
+  search,
+  sTimetable
 }
