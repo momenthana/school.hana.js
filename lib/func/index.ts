@@ -7,6 +7,7 @@ import mTimetable from './mTimetable'
 import schedule from './schedule'
 import search from './search'
 import sTimetable from './sTimetable'
+import timetableClass from './timetableClass'
 
 export {
   classroom,
@@ -17,5 +18,6 @@ export {
   mTimetable,
   schedule,
   search,
-  sTimetable
+  sTimetable,
+  timetableClass,
 }

@@ -25,4 +25,8 @@ school.search({
       .then(res => {
         console.log('H_TIMETABLE:', res[0])
       })
+    await school.timetableClass(res[0])
+      .then(res => {
+        console.log('TIMETABLE_CLASS:', res[0])
+      })
   })
