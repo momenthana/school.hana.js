@@ -17,16 +17,16 @@ school.search({
       .then(res => {
         console.log('MAJOR:', res[0])
       })
-    await school.classroom(res[0])
+    await school.classes(res[0])
       .then(res => {
-        console.log('CLASSROOM:', res[0])
+        console.log('CLASSES:', res[0])
       })
     await school.hTimetable(res[0])
       .then(res => {
         console.log('H_TIMETABLE:', res[0])
       })
-    await school.timetableClass(res[0])
+    await school.classroom(res[0])
       .then(res => {
-        console.log('TIMETABLE_CLASS:', res[0])
+        console.log('CLASSROOM:', res[0])
       })
   })

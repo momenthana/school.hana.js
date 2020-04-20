@@ -1,3 +1,4 @@
+import classes from './classes'
 import classroom from './classroom'
 import eTimetable from './eTimetable'
 import hTimetable from './hTimetable'
@@ -7,9 +8,9 @@ import mTimetable from './mTimetable'
 import schedule from './schedule'
 import search from './search'
 import sTimetable from './sTimetable'
-import timetableClass from './timetableClass'
 
 export {
+  classes,
   classroom,
   eTimetable,
   hTimetable,
@@ -19,5 +20,4 @@ export {
   schedule,
   search,
   sTimetable,
-  timetableClass,
 }
