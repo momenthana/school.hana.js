@@ -1,12 +1,9 @@
 export {
   classes,
   classroom,
-  eTimetable,
-  hTimetable,
   major,
   meal,
-  mTimetable,
   schedule,
   search,
-  sTimetable,
+  timetable,
 } from './func'
