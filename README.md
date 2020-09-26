@@ -8,6 +8,15 @@ school.search({
   console.log(res[0])
 })
 ```
+#### 신청인자
+| Name | Type | Required | Description |
+|-|:-:|:-:|-|
+| `ATPT_OFCDC_SC_CODE` | string | N | 시도교육청코드 |
+| `SD_SCHUL_CODE` | string | N | 표준학교코드 |
+| `SCHUL_NM` | string | N | 학교명 |
+| `SCHUL_KND_SC_NM` | string | N | 학교종류명 |
+| `LCTN_SC_NM` | string | N | 소재지명 |
+| `FOND_SC_NM` | string | N | 설립명 |
 #### 출력결과
 ```js
 {
@@ -48,6 +57,15 @@ school.meal({
   console.log(res[0])
 })
 ```
+#### 신청인자
+| Name | Type | Required | Description |
+|-|:-:|:-:|-|
+| `ATPT_OFCDC_SC_CODE` | string | Y | 시도교육청코드 |
+| `SD_SCHUL_CODE` | string | Y | 표준학교코드 |
+| `MMEAL_SC_CODE` | string | N | 식사코드 |
+| `MLSV_YMD` | string | N | 급식일자 |
+| `MLSV_FROM_YMD` | string | N | 급식시작일자 |
+| `MLSV_TO_YMD` | string | N | 급식종료일자 |
 #### 출력결과
 ```js
 {
@@ -77,6 +95,16 @@ school.schedule({
   console.log(res[0])
 })
 ```
+#### 신청인자
+| Name | Type | Required | Description |
+|-|:-:|:-:|-|
+| `ATPT_OFCDC_SC_CODE` | string | Y | 시도교육청코드 |
+| `SD_SCHUL_CODE` | string | Y | 표준학교코드 |
+| `DGHT_CRSE_SC_NM` | string | N | 주야과정명 |
+| `SCHUL_CRSE_SC_NM` | string | N | 학교과정명 |
+| `AA_YMD` | string | N | 학사일자 |
+| `AA_FROM_YMD` | string | N | 학사시작일자 |
+| `AA_TO_YMD` | string | N | 학사종료일자 |
 #### 출력결과
 ```js
 {
@@ -110,6 +138,13 @@ school.major({
   console.log(res[0])
 })
 ```
+#### 신청인자
+| Name | Type | Required | Description |
+|-|:-:|:-:|-|
+| `ATPT_OFCDC_SC_CODE` | string | Y | 시도교육청코드 |
+| `SD_SCHUL_CODE` | string | Y | 표준학교코드 |
+| `DGHT_CRSE_SC_NM` | string | N | 주야과정명 |
+| `ORD_SC_NM` | string | N | 계열명 |
 #### 출력결과
 ```js
 {
@@ -133,6 +168,17 @@ school.classes({
   console.log(res[0])
 })
 ```
+#### 신청인자
+| Name | Type | Required | Description |
+|-|:-:|:-:|-|
+| `ATPT_OFCDC_SC_CODE` | string | Y | 시도교육청코드 |
+| `SD_SCHUL_CODE` | string | Y | 표준학교코드 |
+| `AY` | string | N | 학년도 |
+| `GRADE` | string | N | 학년 |
+| `DGHT_CRSE_SC_NM` | string | N | 주야과정명 |
+| `SCHUL_CRSE_SC_NM` | string | N | 학교과정명 |
+| `ORD_SC_NM` | string | N | 계열명 |
+| `DDDEP_NM` | string | N | 학과명 |
 #### 출력결과
 ```js
 {
@@ -155,11 +201,29 @@ school.classes({
 ```js
 school.timetable({
   ATPT_OFCDC_SC_CODE: 'B10',
-  SD_SCHUL_CODE: '7010918'
+  SD_SCHUL_CODE: '7010918',
+  SCHUL_KND_SC_NM: '고등학교'
 }).then(res => {
   console.log(res[0])
 })
 ```
+#### 신청인자
+| Name | Type | Required | Description |
+|-|:-:|:-:|-|
+| `ATPT_OFCDC_SC_CODE` | string | Y | 시도교육청코드 |
+| `SD_SCHUL_CODE` | string | Y | 표준학교코드 |
+| `SCHUL_KND_SC_NM` | string | Y | 학교종류명 |
+| `AY` | string | N | 학년도 |
+| `SEM` | string | N | 학기 |
+| `ALL_TI_YMD` | string | N | 시간표일자 |
+| `DGHT_CRSE_SC_NM` | string | N | 주야과정명 |
+| `ORD_SC_NM` | string | N | 계열명 |
+| `DDDEP_NM` | string | N | 학과명 |
+| `GRADE` | string | N | 학년 |
+| `CLRM_NM` | string | N | 강의실명 |
+| `CLASS_NM` | string | N | 반명 |
+| `TI_FROM_YMD` | string | N | 시간표시작일자 |
+| `TI_TO_YMD` | string | N | 시간표종료일자 |
 #### 출력결과
 ```js
 {
@@ -191,6 +255,18 @@ school.classroom({
   console.log(res[0])
 })
 ```
+#### 신청인자
+| Name | Type | Required | Description |
+|-|:-:|:-:|-|
+| `ATPT_OFCDC_SC_CODE` | string | Y | 시도교육청코드 |
+| `SD_SCHUL_CODE` | string | Y | 표준학교코드 |
+| `AY` | string | N | 학년도 |
+| `GRADE` | string | N | 학년 |
+| `SEM` | string | N | 학기 |
+| `SCHUL_CRSE_SC_NM` | string | N | 학교과정명 |
+| `DGHT_CRSE_SC_NM` | string | N | 주야과정명 |
+| `ORD_SC_NM` | string | N | 계열명 |
+| `DDDEP_NM` | string | N | 학과명 |
 #### 출력결과
 ```js
 {
