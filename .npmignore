@@ -1,0 +1,6 @@
+.DS_Store
+.git*
+tsconfig.json
+lib/
+node_modules/
+test/
