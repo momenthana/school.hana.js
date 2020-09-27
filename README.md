@@ -1,4 +1,35 @@
 # school-info
+> 나이스 API 기반 학교정보, 급식식단, 학사일정, 학과정보, 반정보, 시간표, 강의실 정보 제공 라이브러리
+
+## 설치하기
+Using NPM
+```
+npm install school-info
+```
+
+Using Yarn
+```
+yarn add school-info
+```
+
+## 시작하기
+학교기본정보를 이용해 급식식단정보를 출력해주는 구문입니다.
+```js
+const school = require('school-info')
+
+school.search({
+  SCHUL_NM: '하나고등학교'
+}).then(res => {
+  console.log('SEARCH:', res[0])
+
+  school.meal(res[0])
+    .then(res => {
+      console.log('MEAL:', res[0])
+    })
+})
+```
+
+## 기능 명세
 
 ### 학교기본정보
 ```js
@@ -8,6 +39,7 @@ school.search({
   console.log(res[0])
 })
 ```
+
 #### 신청인자
 | Name | Type | Required | Description |
 |-|:-:|:-:|-|
@@ -17,6 +49,7 @@ school.search({
 | `SCHUL_KND_SC_NM` | string | N | 학교종류명 |
 | `LCTN_SC_NM` | string | N | 소재지명 |
 | `FOND_SC_NM` | string | N | 설립명 |
+
 #### 출력결과
 ```js
 {
@@ -57,6 +90,7 @@ school.meal({
   console.log(res[0])
 })
 ```
+
 #### 신청인자
 | Name | Type | Required | Description |
 |-|:-:|:-:|-|
@@ -66,6 +100,7 @@ school.meal({
 | `MLSV_YMD` | string | N | 급식일자 |
 | `MLSV_FROM_YMD` | string | N | 급식시작일자 |
 | `MLSV_TO_YMD` | string | N | 급식종료일자 |
+
 #### 출력결과
 ```js
 {
@@ -95,6 +130,7 @@ school.schedule({
   console.log(res[0])
 })
 ```
+
 #### 신청인자
 | Name | Type | Required | Description |
 |-|:-:|:-:|-|
@@ -105,6 +141,7 @@ school.schedule({
 | `AA_YMD` | string | N | 학사일자 |
 | `AA_FROM_YMD` | string | N | 학사시작일자 |
 | `AA_TO_YMD` | string | N | 학사종료일자 |
+
 #### 출력결과
 ```js
 {
@@ -138,6 +175,7 @@ school.major({
   console.log(res[0])
 })
 ```
+
 #### 신청인자
 | Name | Type | Required | Description |
 |-|:-:|:-:|-|
@@ -145,6 +183,7 @@ school.major({
 | `SD_SCHUL_CODE` | string | Y | 표준학교코드 |
 | `DGHT_CRSE_SC_NM` | string | N | 주야과정명 |
 | `ORD_SC_NM` | string | N | 계열명 |
+
 #### 출력결과
 ```js
 {
@@ -168,6 +207,7 @@ school.classes({
   console.log(res[0])
 })
 ```
+
 #### 신청인자
 | Name | Type | Required | Description |
 |-|:-:|:-:|-|
@@ -179,6 +219,7 @@ school.classes({
 | `SCHUL_CRSE_SC_NM` | string | N | 학교과정명 |
 | `ORD_SC_NM` | string | N | 계열명 |
 | `DDDEP_NM` | string | N | 학과명 |
+
 #### 출력결과
 ```js
 {
@@ -207,6 +248,7 @@ school.timetable({
   console.log(res[0])
 })
 ```
+
 #### 신청인자
 | Name | Type | Required | Description |
 |-|:-:|:-:|-|
@@ -224,6 +266,7 @@ school.timetable({
 | `CLASS_NM` | string | N | 반명 |
 | `TI_FROM_YMD` | string | N | 시간표시작일자 |
 | `TI_TO_YMD` | string | N | 시간표종료일자 |
+
 #### 출력결과
 ```js
 {
@@ -255,6 +298,7 @@ school.classroom({
   console.log(res[0])
 })
 ```
+
 #### 신청인자
 | Name | Type | Required | Description |
 |-|:-:|:-:|-|
@@ -267,6 +311,7 @@ school.classroom({
 | `DGHT_CRSE_SC_NM` | string | N | 주야과정명 |
 | `ORD_SC_NM` | string | N | 계열명 |
 | `DDDEP_NM` | string | N | 학과명 |
+
 #### 출력결과
 ```js
 {
