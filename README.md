@@ -1,5 +1,9 @@
 # school-info
-> 나이스 API 기반 학교정보, 급식식단, 학사일정, 학과정보, 반정보, 시간표, 강의실 정보 제공 라이브러리
+[![npm](https://img.shields.io/npm/v/school-info?style=flat-square)](https://www.npmjs.com/package/school-info)
+[![downloads](https://img.shields.io/npm/dm/school-info?style=flat-square)](https://www.npmjs.com/package/school-info)
+[![license](https://img.shields.io/github/license/momenthana/school-info?style=flat-square)](https://github.com/momenthana/school-info/blob/develop/LICENSE)
+
+나이스 API 기반 학교정보, 급식식단, 학사일정, 학과정보, 반정보, 시간표, 강의실 정보 제공 라이브러리
 
 ## 설치하기
 Using NPM
