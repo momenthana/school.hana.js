@@ -1,19 +1,19 @@
 {
-  "name": "school-info",
-  "version": "1.0.0",
+  "name": "school.hana.js",
+  "version": "0.0.1",
   "description": "나이스 API 기반 학교정보, 급식식단, 학사일정, 학과정보, 반정보, 시간표, 강의실 정보 제공 라이브러리",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
     "build": "tsc",
-    "test": "tsc && node test"
+    "test": "tsc && node test/index.mjs"
   },
-  "repository": "https://github.com/momenthana/school-info.git",
+  "repository": "https://github.com/momenthana/school.hana.js.git",
   "author": "Hana <momenthana@kakao.com>",
   "bugs": {
-    "url": "https://github.com/momenthana/school-info/issues"
+    "url": "https://github.com/momenthana/school.hana.js/issues"
   },
-  "homepage": "https://github.com/momenthana/school-info",
+  "homepage": "https://github.com/momenthana/school.hana.js",
   "keywords": [
     "neis",
     "school",

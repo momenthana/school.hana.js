@@ -1,25 +1,25 @@
 # school.hana.js
-[![npm](https://img.shields.io/npm/v/school-info?style=flat-square)](https://www.npmjs.com/package/school-info)
-[![downloads](https://img.shields.io/npm/dm/school-info?style=flat-square)](https://www.npmjs.com/package/school-info)
-[![license](https://img.shields.io/github/license/momenthana/school-info?style=flat-square)](https://github.com/momenthana/school-info/blob/develop/LICENSE)
+[![npm](https://img.shields.io/npm/v/school.hana.js?style=flat-square)](https://www.npmjs.com/package/school.hana.js)
+[![downloads](https://img.shields.io/npm/dm/school.hana.js?style=flat-square)](https://www.npmjs.com/package/school.hana.js)
+[![license](https://img.shields.io/github/license/momenthana/school.hana.js?style=flat-square)](https://github.com/momenthana/school.hana.js/blob/develop/LICENSE)
 
 나이스 API 기반 학교정보, 급식식단, 학사일정, 학과정보, 반정보, 시간표, 강의실 정보 제공 라이브러리
 
 ## 설치하기
 Using NPM
 ```
-npm install school-info
+npm install school.hana.js
 ```
 
 Using Yarn
 ```
-yarn add school-info
+yarn add school.hana.js
 ```
 
 ## 시작하기
 학교기본정보를 이용해 급식식단정보를 출력해주는 구문입니다.
 ```js
-const school = require('school-info')
+const school = require('school.hana.js')
 
 school.search({
   SCHUL_NM: '하나고등학교'
