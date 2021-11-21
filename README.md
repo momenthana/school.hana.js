@@ -1,4 +1,4 @@
-# school-info
+# school.hana.js
 [![npm](https://img.shields.io/npm/v/school-info?style=flat-square)](https://www.npmjs.com/package/school-info)
 [![downloads](https://img.shields.io/npm/dm/school-info?style=flat-square)](https://www.npmjs.com/package/school-info)
 [![license](https://img.shields.io/github/license/momenthana/school-info?style=flat-square)](https://github.com/momenthana/school-info/blob/develop/LICENSE)
